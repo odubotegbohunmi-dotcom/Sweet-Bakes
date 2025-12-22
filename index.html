@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Bakes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #fff0f5, #fffaf0);
+      color: #3a2c2c;
+    }
+    header {
+      background: linear-gradient(135deg, #d63384, #f783ac);
+      padding: 70px 20px;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3.2em;
+      letter-spacing: 3px;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    nav {
+      background-color: #c2255c;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05em;
+    }
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.4em;
+      margin-bottom: 30px;
+      color: #c2255c;
+    }
+    .cakes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .cake-card {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .cake-card:hover {
+      transform: translateY(-8px);
+    }
+    .cake-card img {
+      width: 100%;
+      border-radius: 15px;
+    }
+    .cake-card h3 {
+      margin-top: 15px;
+      font-size: 1.4em;
+    }
+    .cta {
+      text-align: center;
+      background: linear-gradient(135deg, #f783ac, #faa2c1);
+      padding: 80px 20px;
+      color: white;
+      border-radius: 30px;
+    }
+    .cta h2 {
+      color: white;
+    }
+    .cta a {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #fff;
+      color: #c2255c;
+      padding: 15px 35px;
+      border-radius: 40px;
+      font-size: 1.2em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #c2255c;
+      text-align: center;
+      padding: 25px;
+      color: white;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Sweet Bakes</h1>
+  <p>Luxury Custom Cakes & Bakes Made with Love</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#cakes">Our Bakes</a>
+  <a href="#order">Order</a>
+</nav>
+
+<section id="about">
+  <h2>About Sweet Bakes</h2>
+  <p style="text-align:center; font-size:1.1em;">
+  Sweet Bakes creates custom cakes and a wide range of freshly baked treats, all made with high-quality ingredients and care. From birthdays and weddings to everyday indulgences, every bake is crafted to delight in taste and presentation.
+  </p>
+</section>
+
+<section id="cakes">
+  <h2>Our Signature Bakes</h2>
+  <div class="cakes">
+    <div class="cake-card">
+      <img src="https://via.placeholder.com/400x250" alt="Birthday Cakes" />
+      <h3>Birthday Cakes</h3>
+      <p>Custom designs and flavors for all occasions.</p>
+    </div>
+    <div class="cake-card">
+      <img src="https://via.placeholder.com/400x250" alt="Wedding Cakes" />
+      <h3>Wedding Cakes</h3>
+      <p>Elegant multi-tier cakes for unforgettable celebrations.</p>
+    </div>
+    <div class="cake-card">
+      <img src="https://via.placeholder.com/400x250" alt="Cupcakes & Treats" />
+      <h3>Cupcakes & Treats</h3>
+      <p>Perfect desserts for parties and special moments.</p>
+    </div>
+  </div>
+</section>
+
+<section id="order" class="cta">
+  <h2>Order Your Bakes Today</h2>
+  <p>Contact Sweet Bakes for custom orders, pricing, and availability.</p>
+  <a href="tel:+1234567890">📞 Contact for Orders</a>
+</section>
+
+<footer>
+  <p>© 2025 Sweet Bakes • All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
